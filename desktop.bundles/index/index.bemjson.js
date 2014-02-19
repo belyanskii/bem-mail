@@ -1,6 +1,6 @@
 ({
     block: 'page',
-    title: 'Рассылка Guitareffects.ru',
+    title: 'Рассылка',
     head: [
         { elem: 'css', url: '_index.css', ie: false },
         { elem: 'css', url: '_index.ie.css', ie: 'gte IE 6' },
