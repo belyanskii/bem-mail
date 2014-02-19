@@ -1,0 +1,40 @@
+block content{
+	default: {
+		return applyCtx({
+			block: 'table',
+			width: 700,
+			content: [
+				{
+					elem: 'tr',
+					content:[
+						{
+							elem: 'td',
+							content: [
+								{
+									block: 'table',
+									content: [
+										{
+											elem: 'tr',
+											content:[
+												{
+													elem: 'td',
+													content: [
+														{
+															block: 'table',
+															content: this.ctx.content
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+
+			]
+		});
+	}
+}

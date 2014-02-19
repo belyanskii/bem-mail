@@ -1,0 +1,24 @@
+block header{
+	default: {
+		return applyCtx({
+			block: 'table',
+			// width: 500,
+			content: [
+				{
+					elem: 'tr',
+					content:[
+						{
+							elem: 'td',
+							// height: 500,
+							content: 'logo'
+						},
+						{
+							elem: 'td',
+							content: 'контакты'
+						}
+					]
+				}
+			]
+		})
+	}
+}

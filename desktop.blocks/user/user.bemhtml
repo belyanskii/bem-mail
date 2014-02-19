@@ -1,0 +1,19 @@
+block user{
+	default: {
+		return applyCtx({
+			block: 'table',
+			content: [
+				{
+					elem: 'tr',
+					content:[
+						{
+							elem: 'td',
+							content: this.ctx.content
+						}
+					]
+				}
+
+			]
+		});
+	}
+}

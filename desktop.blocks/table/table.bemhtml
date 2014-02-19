@@ -1,0 +1,25 @@
+block table{
+	bem: false,
+	tag: 'table',
+	attrs: {
+		border: '0',
+		cellpadding: '0',
+		cellspacing: '0',
+		width: this.ctx.width,
+		height: this.ctx.height,
+		style: (this.ctx.height ? ('height:' + this.ctx.height + 'px;') : '')
+	}
+
+	elem tr{
+		bem:false,
+		tag: 'tr'
+	}
+	elem td{
+		bem:false,
+		tag: 'td',
+		attrs:{
+			style: (this.ctx.height ? ('height:' + this.ctx.height + 'px; ') : '') +
+			'border-collapse: collapse;'
+		}
+	}
+}
